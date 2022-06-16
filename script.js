@@ -40,4 +40,5 @@ submitBtn.addEventListener("click", function () {
   const date = localizeDate(new Date(desiredDateLabel.value));
   dateLabel.textContent = date;
   setInterval(timeConvertor, 1000);
+  submitBtn.blur();
 });
