@@ -7,9 +7,6 @@ const hoursLeftLabel = document.querySelector(".hours_left");
 const minutesLeftLabel = document.querySelector(".minutes_left");
 const secondsLeftLabel = document.querySelector(".seconds_left");
 
-// Default Date
-dateLabel.textContent = localizeDate(new Date());
-
 /* Functions */
 const localizeDate = (date) => {
   return new Intl.DateTimeFormat("en-US", {
@@ -34,6 +31,9 @@ const timeConvertor = () => {
     "0"
   );
 };
+
+// Default Date
+dateLabel.textContent = localizeDate(new Date());
 
 /* Event Handlers */
 submitBtn.addEventListener("click", function () {
