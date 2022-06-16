@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon -->
+    <title>Count-Down</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="date_wrapper">
+      <div class="input-group input-group-sm mb-3 p-4">
+        <label class="input-group-text" for="inputGroupFile01"
+          >Select Desired Date</label
+        >
+        <input type="date" class="form-control" id="desiredDate" />
+        <button id="submit" class="btn btn-outline-secondary" type="button">
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="countdown_wrapper d-flex flex-column align-items-center">
+      <h1 class="countdown_title text-uppercase fw-bold">
+        Days left until <span class="date">1 January 2023</span>
+      </h1>
+      <div class="countdown_timer--wrapper d-flex">
+        <div class="days_wrapper d-flex flex-column align-items-center p-4">
+          <h2 class="days_left fs-1">0</h2>
+          <h4 class="days fs-6">Days</h4>
+        </div>
+        <div class="hours_wrapper d-flex flex-column align-items-center p-4">
+          <h2 class="hours_left fs-1">0</h2>
+          <h4 class="hours fs-6">Hours</h4>
+        </div>
+        <div class="minutes_wrapper d-flex flex-column align-items-center p-4">
+          <h2 class="minutes_left fs-1">0</h2>
+          <h4 class="minutes fs-6">Minutes</h4>
+        </div>
+        <div class="seconds_wrapper d-flex flex-column align-items-center p-4">
+          <h2 class="seconds_left fs-1">0</h2>
+          <h4 class="seconds fs-6">Seconds</h4>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
