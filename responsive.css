@@ -54,8 +54,6 @@
 @media screen and (max-width: 380px) {
   body {
     background-size: 1050px 700px;
-    /* background-repeat: no-repeat; */
-    background-position: -270px 20px;
   }
 
   .countdown_wrapper {
